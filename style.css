@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+}
+body.preload{
+	-webkit-transform:scale(1,1);
+	-webkit-transition:all 2s;
+	background-color:#efffef;
+}
+@font-face {
+    font-family: 'BRoyaRegular';
+    src: url('broya-webfont.eot');
+    src: url('broya-webfont.eot?#iefix') format('embedded-opentype'),
+         url('broya-webfont.woff') format('woff'),
+         url('broya-webfont.ttf') format('truetype'),
+         url('broya-webfont.svg#BRoyaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+div.barg{
+	position:fixed;
+	width:150px;
+	height:150px;
+	margin-top:200px;
+	margin-left:50px;
+	float:left;
+	z-index:1;
+
+}
+
+div.grand{
+	margin-left:50px;
+	position:relative;
+	height:650px;
+}
+div.container{
+	background-color:#94F8A0;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:980px;
+	margin:auto;
+	margin-top:50px;
+	box-shadow:inset;
+	opacity:0.9;
+	border-radius:50px;
+}
+div.top{
+	height:150px;
+}
+div.top .logo{
+	width:350px;
+	height:150px;
+	background-image:url(img/log1.png);
+	float:left;
+	margin-top:0;
+}
+div.menu{
+	width:auto;
+	float:none;
+	margin-left:353px;
+	height:150px;
+}
+div.menu ul{
+	width:600px;
+	list-style-type:none;
+	height:100px;
+}
+div.menu li{
+	background-image:url(img/white.png);
+	float:left;
+	direction:rtl;
+	height:100px;
+	width:150px;
+}/*-
+div.menu li:hover{
+	background-image:url(img/White%20start%20button.png);
+}*/
+div.menu a{
+	position:absolute;
+	font-size:13px;
+	color:#333;
+	text-decoration:none;
+	display:block;
+	padding:10px;
+	text-align:center;
+	margin-top:20px;
+	margin-right:8px;
+	font-style:italic;
+}
+
+div.menu a:hover{
+	color:#009900;
+	font-weight:bold;
+
+}
+div.content{
+	height:450px;
+	border-radius:10px;
+	
+}
+div.content .left{
+	width:600px;
+	float:left;
+	height:450px;
+	position:relative;
+}
+div.left p{
+	font-size:18px;
+	color:#345441;
+	font-family: 'BRoyaRegular';
+	margin-top:50px;
+	direction:rtl;
+	
+}
+div.content .right{
+	height:inherit;
+	width:auto;
+	float:none;
+	margin-left:603px;
+	background-image:url(img/1.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	opacity:0.9;
+	
+}
+
+div.content .slides{
+	width:900px;
+	overflow:hidden;
+	margin: 0 auto;
+	margin-top:50px;
+	border-radius:30px;
+}
+
+div.content .train{
+	width:1000px;
+}
+
+div.slides .train > div{
+	width:150px;
+	overflow: hidden;
+	float: left;
+	/* auto height by img */
+}

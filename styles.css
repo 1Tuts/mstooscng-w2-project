@@ -1,0 +1,87 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	/* Setting default text color, background and a font stack */
+	font-size:0.825em;
+	color:#444444;
+	background:url("img/bg.png") repeat-x #fff;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+#mosaic-slideshow{
+	/* The slideshow container div */
+	height:500px;
+	margin:0 auto;
+	position:relative;
+	width:670px;
+}
+
+.mosaic-slide{
+	/* This class is shared between all the slides */
+	left:80px;
+	position:absolute;
+	top:25px;
+	
+	border:10px solid #555;
+	
+	/* CSS3 rounded corners */
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+}
+
+.tile{
+	/* The individual tiles */
+	height:60px;
+	width:60px;
+	float:left;
+	border:1px solid #555;
+	border-width:0 1px 1px 0;
+	background-color:#555;
+}
+
+.arrow{
+	/* The prev/next arrows */
+	width:35px;
+	height:70px;
+	background:url("img/arrows.png") no-repeat;
+	position:absolute;
+	cursor:pointer;
+	top:50%;
+	margin-top:-35px;
+}
+
+.arrow.left{
+	left:15px;
+	background-position:center top;
+}
+
+.arrow.left:hover{
+	background-position:center -70px;
+}
+
+.arrow.right{
+	right:15px;
+	background-position:center -140px;
+}
+
+.arrow.right:hover{
+	background-position:center -210px;
+}
+
+.clear{
+	clear:both;
+}
+
+
+
+#main{
+	position:relative;
+	margin:0 auto;
+	width:960px;
+}
+
